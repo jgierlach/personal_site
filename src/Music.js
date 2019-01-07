@@ -24,15 +24,14 @@ class Music extends React.Component {
   render() {
     return (
       <div onMouseMove={this.onMouseMove}>
-        <div className="blog-div panel" style={this.state.styleOne} />
-        <div className="blog-div panel" style={this.state.styleTwo} />
+        <div className="panel" style={this.state.styleOne} />
+        <div className="panel" style={this.state.styleTwo} />
 
-        <div className="z-depth-4 music-panel center container col s12">
+        <div className="container-padding top-margin z-depth-4 music-panel center container col s12">
           <div className="center">
             <h3>First Song</h3>
             <audio controls>
               <source src={song1} type="audio/wav" />
-              Your browser does not support the audio tag.
             </audio>
 
             <br />
@@ -40,7 +39,6 @@ class Music extends React.Component {
             <h3>Second Song</h3>
             <audio controls>
               <source src={song2} type="audio/wav" />
-              Your browser does not support the audio tag.
             </audio>
           </div>
         </div>

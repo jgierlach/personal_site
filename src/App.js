@@ -7,6 +7,7 @@ import Contact from './Contact'
 import Home from './Home'
 import Footer from './Footer'
 import Music from './Music'
+import Cycling from './Cycling'
 import './App.css'
 
 class App extends Component {
@@ -20,6 +21,7 @@ class App extends Component {
               <Route exact path='/blog' component={Blog} />
               <Route exact path='/home' component={Home} />
               <Route exact path='/music' component={Music} />
+              <Route exact path='/cycling' component={Cycling} />
               <Redirect from='/' to='/home'/>
             </Switch>
           <Footer />  

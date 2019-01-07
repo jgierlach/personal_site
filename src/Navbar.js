@@ -20,14 +20,6 @@ const Navbar = () => {
                 </NavLink>
               </li> 
               <li>
-               {/* Link to mission component */}      
-                {/* <NavLink to='/mission'
-                  activeStyle={{
-                  color: '#EF4907'
-                 }}>Mission   
-                </NavLink> */}
-              </li>
-              <li>
                {/* Link to contact component */}
                 <NavLink to='/contact'
                   activeStyle={{
@@ -44,11 +36,19 @@ const Navbar = () => {
                 </NavLink>
               </li>
               <li>
-                {/* Link to blog component */}
+                {/* Link to cycling component */}
                 <NavLink to='/music'
                   activeStyle={{
                   color: '#EF4907'
                 }}>Music   
+                </NavLink>
+              </li>
+              <li>
+                {/* Link to cycling component */}
+                <NavLink to='/cycling'
+                  activeStyle={{
+                  color: '#EF4907'
+                }}>Cycling   
                 </NavLink>
               </li>
             </ul>
@@ -84,6 +84,12 @@ const Navbar = () => {
                   activeStyle={{
                   color: '#EF4907'
                 }}>Blog/News   
+                </NavLink>
+                {/* Mobile Link to cycling component */} 
+                <NavLink to='/cycling'
+                  activeStyle={{
+                  color: '#EF4907'
+                }}>Cycling   
                 </NavLink>
               </li> 
             </ul>

@@ -2,7 +2,7 @@ import React from 'react'
 
 const Contact = () => {
     return  (
-      <h1>This is the contact component</h1>
+      <h1 className="delay-appearence">This is the contact component</h1>
     )
 }
 
