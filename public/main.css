@@ -1,0 +1,15 @@
+/* These classes are written to give the appearence of a slight delay between load and when content appears on the page. Any JSX with the content class will have the content.active class applied to it on load triggering this visual delay by some JQuery written in the HTML  */
+
+.content {
+  z-index: 1;
+  transition: .4s;
+  opacity: 0;
+  transform: scale(0.95, 0.95) translateY(15px);
+}
+
+.content.active {
+  z-index: 1000;
+  transition: .4s;
+  opacity: 1;
+  transform: scale(1, 1) translateY(0);
+}
