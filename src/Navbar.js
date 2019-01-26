@@ -13,9 +13,9 @@ const Navbar = () => {
   return (
     <nav className="white z-depth-3">
       {/* <!-- Dropdown Structure --> */}
-      <ul id="dropdown1" className="dropdown-content">
+      <ul id="dropdown1" className="dropdown-content black-font">
         <li>
-          {/* Link to music component */}
+          {/* Link to music component within the dropdown menu */}
           <NavLink
             className="black-font"
             to="/music"
@@ -26,9 +26,9 @@ const Navbar = () => {
             Music
           </NavLink>
         </li>
-        <li class="divider" />
+        <li className="divider" />
         <li>
-          {/* Link to cycling component */}
+          {/* Link to cycling component within the dropdown menu */}
           <NavLink
             className="black-font"
             to="/cycling"
@@ -40,6 +40,7 @@ const Navbar = () => {
           </NavLink>
         </li>
       </ul>
+      {/* End of Dropdown Structure */}
 
       <div className="nav-wrapper">
         {/* Beginning of desktop navbar */}
@@ -61,15 +62,15 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {/* Link to contact component */}
+            {/* Link to projects component */}
             <NavLink
               className="black-font"
-              to="/contact"
+              to="/blog"
               activeStyle={{
                 color: 'lightgrey'
               }}
             >
-              Contact
+              Projects
             </NavLink>
           </li>
           {/* <!-- Dropdown Trigger --> */}
@@ -87,42 +88,19 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {/* Link to projects component */}
+            {/* Link to contact component */}
             <NavLink
               className="black-font"
-              to="/blog"
+              to="/contact"
               activeStyle={{
                 color: 'lightgrey'
               }}
             >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            {/* Link to cycling component */}
-            <NavLink
-              className="black-font"
-              to="/music"
-              activeStyle={{
-                color: 'lightgrey'
-              }}
-            >
-              Music
-            </NavLink>
-          </li>
-          <li>
-            {/* Link to cycling component */}
-            <NavLink
-              className="black-font"
-              to="/cycling"
-              activeStyle={{
-                color: 'lightgrey'
-              }}
-            >
-              Cycling
+              Contact
             </NavLink>
           </li>
         </ul>
+
         {/* End of desktop navbar beginning of mobile navbar */}
         <ul id="mobile-links" className="sidenav">
           <li>
@@ -138,29 +116,15 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {/* Mobile Link to contact component */}
+            {/* Mobile Link to projects component */}
             <NavLink
               className="black-font"
-              to="/contact"
+              to="/blog"
               activeStyle={{
                 color: 'lightgrey'
               }}
             >
-              Contact
-            </NavLink>
-          </li>
-          {/* <!-- Dropdown Trigger --> */}
-          <li>
-            <NavLink
-              className="dropdown-trigger black-font"
-              to="#!"
-              data-target="dropdown1"
-              activeStyle={{
-                color: 'lightgrey'
-              }}
-            >
-              Hobbies
-              <i className="material-icons right">arrow_drop_down</i>
+              Projects
             </NavLink>
           </li>
           <li>
@@ -176,16 +140,6 @@ const Navbar = () => {
             </NavLink>
           </li>
           <li>
-            {/* Mobile Link to blog component */}
-            <NavLink
-              className="black-font"
-              to="/blog"
-              activeStyle={{
-                color: 'lightgrey'
-              }}
-            >
-              Blog/News
-            </NavLink>
             {/* Mobile Link to cycling component */}
             <NavLink
               className="black-font"
@@ -195,6 +149,18 @@ const Navbar = () => {
               }}
             >
               Cycling
+            </NavLink>
+          </li>
+          <li>
+            {/* Mobile Link to contact component */}
+            <NavLink
+              className="black-font"
+              to="/contact"
+              activeStyle={{
+                color: 'lightgrey'
+              }}
+            >
+              Contact
             </NavLink>
           </li>
         </ul>
