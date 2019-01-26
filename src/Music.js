@@ -27,7 +27,7 @@ class Music extends React.Component {
         <div className="panel" style={this.state.styleOne} />
         <div className="panel" style={this.state.styleTwo} />
 
-        <div className="container-padding top-margin z-depth-4 music-panel center container col s12">
+        <div className="container-padding top-margin z-depth-4 music-panel center container col s12 white">
           <div className="center">
             <h3>First Song</h3>
             <audio controls>

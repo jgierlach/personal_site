@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Park Shark</title>
+    <title>Jan-Edward Gierlach</title>
     <meta charset="utf-8" />
     <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta
@@ -66,22 +66,15 @@
     <script>
       $(document).ready(function() {
         $('.sidenav').sidenav()
+        $(".dropdown-trigger").dropdown({ hover: false })
       })
     </script>
 
-    <!-- JQuery to add the active class to give things a slight delay before they appear on the page -->
+    <!-- JQuery to add the active class to activate the dropdown menu -->
     <script>
       $(document).ready(function() {
-        $('#delay').addClass('active')
+        $(".dropdown-trigger").dropdown({ hover: false })
       })
     </script>
-
-    <!-- <script src="jquery.min.js"></script>
-    <script src="jquery.scrollex.min.js"></script>
-    <script src="jquery.scrolly.min.js"></script>
-    <script src="browser.min.js"></script>
-    <script src="breakpoints.min.js"></script>
-    <script src="util.js"></script>
-    <script src="main.js"></script> -->
   </body>
 </html>

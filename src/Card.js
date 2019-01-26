@@ -4,7 +4,7 @@ class Card extends React.Component {
   render() {
     const { cardImage, externalLink, cardTitle, cardText } = this.props      
     return (
-      <div className="card">
+      <div className="card z-depth-4">
         <div className="card-image">
           <img alt="" src={cardImage} />
           <span className="card-title">{cardTitle}</span>
